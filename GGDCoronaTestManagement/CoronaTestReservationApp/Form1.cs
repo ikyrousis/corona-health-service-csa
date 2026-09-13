@@ -30,13 +30,6 @@ namespace UserApp
         {
             List<Ggd> availableTestLocations = proxy.GetAvailableTestLocations();
 
-            //foreach (Ggd ggd in availableTestLocations)
-            //{
-            //    lbLocations.Items.Add(ggd.GgdCity);
-            //    lbAvailableCapacity.Items.Add(ggd.AvailableCapacity);
-            //    lbAddress.Items.Add(ggd.)
-            //}
-
             lbLocations.DataSource = availableTestLocations.Select(l => l.GgdCity).ToList();
             lbAvailableCapacity.DataSource = availableTestLocations.Select(l => l.AvailableCapacity).ToList();
             lbAddress.DataSource = availableTestLocations.Select(l => l.TestCenterAddress).ToList();

@@ -30,13 +30,6 @@ namespace GGDTestCenterAdmin
             List<Ggd> testLocations = proxy.GetGgdInfo();
 
             lbTestCapacity.DataSource = testLocations.Select(t => t.AvailableCapacity).ToList();
-
-            //lbTestCapacity.Items.Clear();
-
-            //foreach (Ggd testLocation in testLocations)
-            //{
-            //    lbTestCapacity.Items.Add(testLocation.AvailableCapacity);
-            //}
         }
 
         public void OnUpdateLocations()

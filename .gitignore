@@ -28,6 +28,9 @@ TestResult.xml
 *.ldf
 *.ndf
 
+# Visual Studio
+.vs/
+
 # User-specific files
 *.rsuser
 *.suo
